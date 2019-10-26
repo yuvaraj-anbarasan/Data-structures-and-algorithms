@@ -1,4 +1,4 @@
-package Rat_In_Maze;
+package backtracking.ratinmaze;
 
 public class RatInMaze {
     boolean isSafe(int[][] maze, int x, int y, int n) {
