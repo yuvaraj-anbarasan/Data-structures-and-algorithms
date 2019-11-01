@@ -30,3 +30,9 @@ out/
 
 # JIRA plugin
 atlassian-ide-plugin.xml
+
+.idea/misc
+.idea/modules
+.idea/uiDesigner
+.idea/vcs
+.idea/workspace
