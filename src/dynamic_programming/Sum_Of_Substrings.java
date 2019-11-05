@@ -5,10 +5,10 @@ public class Sum_Of_Substrings {
     public static int sumOfSubstrings(String num) {
         int n = num.length();
 
-        int sumofdigit[] = new int[n];
+        long sumofdigit[] = new long[n];
 
         sumofdigit[0] = num.charAt(0)-'0';
-        int res = sumofdigit[0];
+        long res = sumofdigit[0];
 
         for (int i = 1; i < n; i++)
         {
@@ -19,19 +19,18 @@ public class Sum_Of_Substrings {
                        = 4*4 + 10*(3 + 23 +123)
                        = 4*4 + 10*(sumofdigit[2])
             */
-            sumofdigit[i] = (i+1) * numi +
-                    10 * sumofdigit[i-1];
+            sumofdigit[i] =(long) (( ((i+1) * numi) + (10 * sumofdigit[i-1]) ) % (Math.pow(10, 9) + 7));
 
-            res += sumofdigit[i];
+            res = (long) ((res + sumofdigit[i]) % (Math.pow(10, 9) + 7));
         }
 
-        return res;
+        return (int) (res);
     }
 
     //  Driver code to test above methods
     public static void main(String[] args)
     {
-        String num = "123";
+        String num = "213676822290";
 
         System.out.println(sumOfSubstrings(num));
 
