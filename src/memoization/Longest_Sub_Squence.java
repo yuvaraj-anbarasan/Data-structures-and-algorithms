@@ -1,5 +1,8 @@
-package dynamicProgramming;
-
+package memoization;
+/*
+https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/
+https://www.youtube.com/watch?v=sSno9rV8Rhg
+ */
 import java.util.Scanner;
 
 public class Longest_Sub_Squence {
