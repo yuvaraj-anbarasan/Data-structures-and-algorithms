@@ -1,6 +1,5 @@
-package recursion;
+package algorithms.recursion;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Longest_Sub_Squence {

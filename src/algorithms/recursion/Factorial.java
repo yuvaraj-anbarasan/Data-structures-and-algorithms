@@ -1,4 +1,4 @@
-package recursion;
+package algorithms.recursion;
 
 public class Factorial {
     static int fact(int n){

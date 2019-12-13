@@ -1,4 +1,4 @@
-package memoization;
+package algorithms.memoization;
 /*
 https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/
 https://www.youtube.com/watch?v=sSno9rV8Rhg
